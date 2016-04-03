@@ -31,10 +31,16 @@ function admin_init_onlinesaleschat() {
 }
 
 function admin_menu_apexchat() {
-  add_options_page('OnlineSalesChat', 'OnlineSalesChat', 'manage_options', 'onlinesaleschat', 'options_page_onlinesaleschat');
+  add_options_page(
+    'Online Sales Chat',              /* Page Title */
+    'Online Sales Chat',              /* Menu Title */
+    'manage_options',                 /* Capability */
+    'onlinesaleschat',                /* Menu Slug */
+    'options_page_onlinesaleschat'    /* Function */
+  );  
 }
 
-function options_page_apexchat() {
+function options_page_onlinesaleschat() {
   include(WP_PLUGIN_DIR.'/onlinesaleschat-wp-plugin/options.php');
 }
 
