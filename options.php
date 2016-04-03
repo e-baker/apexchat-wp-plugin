@@ -1,9 +1,10 @@
 <div class="wrap">
-<h2>ApexChat</h2>
+<h2>Online Sales Chat</h2>
+<p>If you have not yet signed up with <a href="http://www.onlinesaleschat.com" target="_blank">OnlineSalesChat.com</a> and received your company ID, you should do so before activating this plugin.</p>
 
 <form method="post" action="options.php">
 <?php wp_nonce_field('update-options'); ?>
-<?php settings_fields('apexchat'); ?>
+<?php settings_fields('onlinesaleschat'); ?>
 
 <table class="form-table">
 
