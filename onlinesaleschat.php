@@ -6,7 +6,7 @@ Description: This plugin allows you to easily integrate OnlineSalesChat with you
 Version: 1.0
 Author: Eric Baker of Traffic Light Media
 Author URI: http://ericbaker.me
-License: GPLv2
+License: GPLv3
 */
 
 if (!defined('WP_CONTENT_URL'))
