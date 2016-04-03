@@ -30,14 +30,8 @@ function admin_init_onlinesaleschat() {
   register_setting('onlinesaleschat', 'company_id');
 }
 
-function admin_menu_apexchat() {
-  add_options_page(
-    'Online Sales Chat',              /* Page Title */
-    'Online Sales Chat',              /* Menu Title */
-    'manage_options',                 /* Capability */
-    'onlinesaleschat',                /* Menu Slug */
-    'options_page_onlinesaleschat'    /* Function */
-  );  
+function admin_menu_onlinesaleschat() {
+  add_options_page('Online Sales Chat', 'Online Sales Chat', 'manage_options', 'onlinesaleschat', 'options_page_onlinesaleschat');  
 }
 
 function options_page_onlinesaleschat() {
@@ -47,7 +41,7 @@ function options_page_onlinesaleschat() {
 function onlinesaleschat() {
   $company_id = get_option('company_id');
 ?>
-<script src="//www.liveleads.us/scripts/invitation.ashx?company=<?php echo $company_id ?>"async></script>
+<script src="http://www.liveleads.us/scripts/invitation.ashx?company=<?php echo $company_id ?>"async></script>
 <?php
 }
 
